@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=0
+Content-Length: 944
+Content-Type: text/xml; charset=utf-8
+Node: VENUS
+X-Powered-By: ASP.NET
+X-AspNet-Version: 4.0.30319
+Date: Fri, 15 Feb 2013 14:10:53 GMT
+
+<?xml version="1.0" encoding="utf-8"?>
+<Response>
+    <merchantreference>123456</merchantreference>
+    <datacash_reference>4300200042810537</datacash_reference>
+    <reason>3DS Payer Verification Required</reason>
+    <status>150</status>
+    <CardTxn>
+        <ThreeDSecure>
+            <acs_url>https://secure.barclaycard.co.uk/barclays/tdsecure/pa.jsp</acs_url>
+            <pareq_message>Some PaREQ</pareq_message>
+        </ThreeDSecure>
+    </CardTxn>
+</Response>
