@@ -49,7 +49,7 @@ class PurchaseRequest extends AbstractRequest
         $data->Transaction->TxnDetails->merchantreference = $this->getTransactionId();
 
         $data->Transaction->CardTxn->Card->pan = $this->getCard()->getNumber();
-        $data->Transaction->CardTxn->Card->expirydate = $this->getCard()->getExpiryDate('m') . '/' . $this->getCard()->getExpiryDate('y');
+        $data->Transaction->CardTxn->Card->expirydate = $this->getCard()->getExpiryDate('m/y');
 
         $data->Transaction->CardTxn->method = 'auth';
 
