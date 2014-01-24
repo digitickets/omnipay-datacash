@@ -2,9 +2,9 @@
 
 **DataCash driver for the Omnipay PHP payment processing library**
 
-[![Build Status](https://travis-ci.org/omnipay/datacash.png?branch=master)](https://travis-ci.org/omnipay/datacash)
-[![Latest Stable Version](https://poser.pugx.org/omnipay/datacash/version.png)](https://packagist.org/packages/omnipay/datacash)
-[![Total Downloads](https://poser.pugx.org/omnipay/datacash/d/total.png)](https://packagist.org/packages/omnipay/datacash)
+[![Build Status](https://travis-ci.org/coatesap/omnipay-datacash.png?branch=master)](https://travis-ci.org/omnipay/datacash)
+[![Latest Stable Version](https://poser.pugx.org/coatesap/omnipay-datacash/version.png)](https://packagist.org/packages/omnipay/datacash)
+[![Total Downloads](https://poser.pugx.org/coatesap/omnipay-datacash/d/total.png)](https://packagist.org/packages/coatesap/omnipay-datacash)
 
 [Omnipay](https://github.com/omnipay/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.3+. This package implements DataCash support for Omnipay.
@@ -17,7 +17,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "omnipay/datacash": "~2.0"
+        "coatesap/omnipay-datacash": "~2.0"
     }
 }
 ```
