@@ -1,5 +1,5 @@
 {
-    "name": "omnipay/datacash",
+    "name": "coatesap/omnipay-datacash",
     "type": "library",
     "description": "DataCash driver for the Omnipay payment processing library",
     "keywords": [
@@ -10,16 +10,12 @@
         "pay",
         "payment"
     ],
-    "homepage": "https://github.com/omnipay/datacash",
+    "homepage": "https://github.com/coatesap/omnipay-datacash",
     "license": "MIT",
     "authors": [
         {
-            "name": "Adrian Macneil",
-            "email": "adrian@adrianmacneil.com"
-        },
-        {
-            "name": "Omnipay Contributors",
-            "homepage": "https://github.com/omnipay/datacash/contributors"
+            "name": "Andrew Coates",
+            "email": "andycoatz@gmail.com"
         }
     ],
     "autoload": {
