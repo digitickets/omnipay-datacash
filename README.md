@@ -7,7 +7,7 @@
 [![Total Downloads](https://poser.pugx.org/coatesap/omnipay-datacash/d/total.png)](https://packagist.org/packages/coatesap/omnipay-datacash)
 
 [Omnipay](https://github.com/omnipay/omnipay) is a framework agnostic, multi-gateway payment
-processing library for PHP 5.3+. This package implements [DataCash](http://www.datacash.com) support for Omnipay.
+processing library for PHP 5.3+. This package adds support for the [DataCash](http://www.datacash.com) payment gateway, using their API/direct (DPG) method of integration.
 
 ## Installation
 
