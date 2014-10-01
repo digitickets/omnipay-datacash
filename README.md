@@ -28,11 +28,11 @@ And run composer to update your dependencies:
 
 ## Basic Usage
 
-The following gateways are provided by this package:
+This driver supports two transaction types:
+ * Purchase (including 3D Secure support if card holder is registered)
+ * Refund (you will need to send DataCash's reference from the original transaction as the 'transactionReference' parameter.)
 
-* [DataCash](http://www.datacash.com)
-
-For general usage instructions, please see the main [Omnipay](https://github.com/omnipay/omnipay)
+For general Omnipay usage instructions, please see the main [Omnipay](https://github.com/omnipay/omnipay)
 repository.
 
 ## Support
