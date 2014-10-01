@@ -61,11 +61,21 @@ class Response extends AbstractResponse implements RedirectResponseInterface
     {
         return 'POST';
     }
+    
+    protected function getPaReq()
+    {
+        if (isset($this->data->CardTxn->ThreeDSecure->pareq_message)) {
+            return (string)$this->data->CardTxn->ThreeDSecure->pareq_message;
+        } else {
+            return '';
+        }
+    }
 
     public function getRedirectData()
     {
-        return $redirectData = array(
-            'PaReq' => isset($this->data->CardTxn->ThreeDSecure->pareq_message) ? (string)$this->data->CardTxn->ThreeDSecure->pareq_message : '',
+        
+        return array(
+            'PaReq' => $this->getPaReq(),
             'TermUrl' => $this->getRequest()->getReturnUrl(),
             'MD' => (string) $this->getTransactionId(),
         );
