@@ -65,7 +65,7 @@ class Response extends AbstractResponse implements RedirectResponseInterface
     public function getRedirectData()
     {
         return $redirectData = array(
-            'PaReq' => (string) $this->data->CardTxn->ThreeDSecure->pareq_message,
+            'PaReq' => isset($this->data->CardTxn->ThreeDSecure->pareq_message) ? (string)$this->data->CardTxn->ThreeDSecure->pareq_message : '',
             'TermUrl' => $this->getRequest()->getReturnUrl(),
             'MD' => (string) $this->getTransactionId(),
         );
