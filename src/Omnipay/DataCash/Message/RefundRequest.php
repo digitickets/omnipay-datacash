@@ -37,7 +37,6 @@ class RefundRequest extends AbstractRequest
     public function getData()
     {
         $this->validate('amount', 'transactionReference');
-        $this->getCard()->validate();
 
         $data = new SimpleXMLElement('<Request/>');
 
