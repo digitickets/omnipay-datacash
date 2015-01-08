@@ -43,6 +43,11 @@ class Response extends AbstractResponse implements RedirectResponseInterface
         return (string) $this->data->merchantreference;
     }
 
+    public function getAuthCode()
+    {
+        return (string) (isset($this->data->CardTxn->authcode) ? $this->data->CardTxn->authcode : '');
+    }
+
     public function getMessage()
     {
         return (string) $this->data->reason;
