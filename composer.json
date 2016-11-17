@@ -1,5 +1,5 @@
 {
-    "name": "coatesap/omnipay-datacash",
+    "name": "digitickets/omnipay-datacash",
     "type": "library",
     "description": "DataCash driver for the Omnipay payment processing library",
     "keywords": [
@@ -10,7 +10,7 @@
         "pay",
         "payment"
     ],
-    "homepage": "https://github.com/coatesap/omnipay-datacash",
+    "homepage": "https://github.com/digitickets/omnipay-datacash",
     "license": "MIT",
     "authors": [
         {
